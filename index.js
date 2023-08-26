@@ -11,7 +11,8 @@ const port = process.env.PORT || 5000;
 app.use(cors(
   {
     origin : ["https://frontend-bay-six.vercel.app"],
-    methods : ["POST","GET","PUT","DELETE"]
+    methods : ["POST","GET","PUT","DELETE"],
+    credentials : true 
   }
 ))
 app.use(express.json());
