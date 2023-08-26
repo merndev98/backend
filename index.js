@@ -37,9 +37,6 @@ async function main() {
     console.error("MongoDB connection error:", error);
   }
 }
-app.get("/",(req,res)=>{
-res.json("hellon")
-})
 
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
